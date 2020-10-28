@@ -1,0 +1,45 @@
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.GUI_ThanhVien.resources
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\GUI_QuanLy.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\BUS_QuanLy.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DTO_QuanLy.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DAL_QuanLy.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\BUS_QuanLy.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DTO_QuanLy.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DAL_QuanLy.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.pdb
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\GUI_QuanLy.exe
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\GUI_QuanLy.pdb
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\BUS_QuanLy.dll
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DTO_QuanLy.dll
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DAL_QuanLy.dll
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\BUS_QuanLy.pdb
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DTO_QuanLy.pdb
+D:\QuanLyThanhVien\GUI_QuanLy\bin\Debug\DAL_QuanLy.pdb
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.csprojAssemblyReference.cache
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.GUI_DiaDiem.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.Properties.Resources.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.GenerateResource.cache
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CoreCompileInputs.cache
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.csproj.CopyComplete
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.exe
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.pdb
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.GUI_LoaiTour.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.TourGUI.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.GiaTourGUI.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.GUI_DOAN.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.DSKhachThuocDoan_GUI.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.DSDiaDiemThuocTour.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.XemGiaTour.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.TimKiemGUI.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.MainGUI.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl1.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl2.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3_1.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3_2.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.ChiTietTour.resources

@@ -1,0 +1,16 @@
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DAL_QuanLy.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DAL_QuanLy.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DTO_QuanLy.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DTO_QuanLy.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.dll
+c:\users\administrator\documents\visual studio 2015\Projects\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.pdb
+D:\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DAL_QuanLy.dll
+D:\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DAL_QuanLy.pdb
+D:\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DTO_QuanLy.dll
+D:\QuanLyThanhVien\DAL_QuanLy\bin\Debug\DTO_QuanLy.pdb
+D:\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.csprojAssemblyReference.cache
+D:\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.csproj.CoreCompileInputs.cache
+D:\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.csproj.CopyComplete
+D:\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.dll
+D:\QuanLyThanhVien\DAL_QuanLy\obj\Debug\DAL_QuanLy.pdb
