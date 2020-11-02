@@ -47,6 +47,17 @@ namespace DAL_QuanLy
             return dt;
         }
 
-        
+        public DataTable getMaDoanDeThongKeChiPhi(string ma, string tu, string den)
+        {
+            string sql = "SELECT d.MADOAN " +
+                        "FROM dbo.TOUR t, dbo.DOAN d " +
+                        "WHERE t.MATOUR = d.MATOUR AND d.NGAYBD BETWEEN '" +tu+"' AND '"+den+"' " +
+                        "AND d.MATOUR = '"+ma+"'";
+            Console.WriteLine(sql);
+            SqlDataAdapter sda = new SqlDataAdapter(sql, _conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
     }
 }

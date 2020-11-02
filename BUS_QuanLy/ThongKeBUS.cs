@@ -9,18 +9,22 @@ namespace BUS_QuanLy
 {
     public class ThongKeBUS
     {
-        ThongKeDAL bus = new ThongKeDAL();
+        ThongKeDAL dal = new ThongKeDAL();
         public DataTable getMaNV()
         {
-            return bus.getNhanVien();
+            return dal.getNhanVien();
         }
         public DataTable ThongKeDLSoLanNhanVienDiTour(string tu, string den, string ma)
         {
-            return bus.ThongKeDLSoLanNhanVienDiTour(tu, den, ma);
+            return dal.ThongKeDLSoLanNhanVienDiTour(tu, den, ma);
         }
         public DataTable ThongKeSoLanNhanVienDiTour(string tu, string den, string ma)
         {
-            return bus.ThongKeSoLanNhanVienDiTour(tu, den, ma);
+            return dal.ThongKeSoLanNhanVienDiTour(tu, den, ma);
+        }
+        public DataTable getMaDoanDeThongKeChiPhi(string ma, string tu, string den)
+        {
+            return dal.getMaDoanDeThongKeChiPhi(ma, tu, den);
         }
     }
 }

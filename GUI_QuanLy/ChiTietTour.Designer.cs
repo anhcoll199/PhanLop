@@ -32,13 +32,13 @@
             this.txtBack = new System.Windows.Forms.Button();
             this.BangDiaDiem = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.MADD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnThemPhieu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaTour = new System.Windows.Forms.TextBox();
             this.btnGo = new System.Windows.Forms.Button();
-            this.MADD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BangDiaDiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -47,6 +47,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.txtBack);
             this.groupBox1.Controls.Add(this.BangDiaDiem);
             this.groupBox1.Controls.Add(this.dataGridView2);
@@ -95,6 +96,16 @@
             this.dataGridView2.TabIndex = 7;
             this.dataGridView2.Click += new System.EventHandler(this.dataGridView2_Click);
             // 
+            // MADD
+            // 
+            this.MADD.HeaderText = "Mã địa điểm";
+            this.MADD.Name = "MADD";
+            // 
+            // TENDD
+            // 
+            this.TENDD.HeaderText = "Tên địa điểm";
+            this.TENDD.Name = "TENDD";
+            // 
             // BtnThemPhieu
             // 
             this.BtnThemPhieu.Location = new System.Drawing.Point(249, 43);
@@ -137,16 +148,6 @@
             this.btnGo.Text = "Chọn";
             this.btnGo.UseVisualStyleBackColor = true;
             this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
-            // 
-            // MADD
-            // 
-            this.MADD.HeaderText = "Mã địa điểm";
-            this.MADD.Name = "MADD";
-            // 
-            // TENDD
-            // 
-            this.TENDD.HeaderText = "Tên địa điểm";
-            this.TENDD.Name = "TENDD";
             // 
             // ChiTietTour
             // 

@@ -31,6 +31,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.userControl3_11 = new GUI_QuanLy.UserControl3_1();
             this.button1 = new System.Windows.Forms.Button();
+            this.userControl3_21 = new GUI_QuanLy.UserControl3_2();
             this.SuspendLayout();
             // 
             // button4
@@ -58,11 +59,20 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Thống kê chi phí tour";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // userControl3_21
+            // 
+            this.userControl3_21.Location = new System.Drawing.Point(14, 66);
+            this.userControl3_21.Name = "userControl3_21";
+            this.userControl3_21.Size = new System.Drawing.Size(553, 263);
+            this.userControl3_21.TabIndex = 9;
             // 
             // UserControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControl3_21);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.userControl3_11);
             this.Controls.Add(this.button4);
@@ -78,5 +88,6 @@
         private System.Windows.Forms.Button button4;
         private UserControl3_1 userControl3_11;
         private System.Windows.Forms.Button button1;
+        private UserControl3_2 userControl3_21;
     }
 }
