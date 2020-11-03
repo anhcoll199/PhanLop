@@ -26,5 +26,15 @@ namespace BUS_QuanLy
         {
             return dal.getMaDoanDeThongKeChiPhi(ma, tu, den);
         }
+
+        public DataTable ThongKeChiPhiTatCaDoanTheoTour(string ma, string tu, string den)
+        {
+            return dal.ThongKeChiPhiTatCaDoanTheoTour(ma, tu, den);
+        }
+
+        public DataTable ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(string ma, string tu, string den, string doan)
+        {
+            return dal.ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(ma, tu, den, doan);
+        }
     }
 }

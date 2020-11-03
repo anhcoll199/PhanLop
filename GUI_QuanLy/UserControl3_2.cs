@@ -54,6 +54,7 @@ namespace GUI_QuanLy
             {
                 cbbMaDoan.Items.Add(bus1.getMaDoanDeThongKeChiPhi(ma, dateTimePicker1.Text, dateTimePicker2.Text).Rows[i]["MADOAN"].ToString());
             }
+            dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text);
         }
 
         private void cbbMaDoan_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,8 +67,13 @@ namespace GUI_QuanLy
             //cbbMaDoan.Text = "-1";
             if(cbbMaDoan.SelectedIndex == 0)
             {
-                
-            }    
+                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text);
+            }   
+            else
+            {
+                string madoan = cbbMaDoan.Text;
+                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text,madoan);
+            }
         }
     }
 }

@@ -59,5 +59,31 @@ namespace DAL_QuanLy
             sda.Fill(dt);
             return dt;
         }
+
+        public DataTable ThongKeChiPhiTatCaDoanTheoTour(string ma, string tu, string den)
+        {
+            string sql = "SELECT c.GIATRI, d.MADOAN, t.MATOUR " +
+                        "FROM dbo.CHIPHI c, dbo.LOAICP l, dbo.DOAN d, dbo.TOUR t " +
+                        "WHERE l.MALOAICP=c.MALOAICP AND d.MADOAN = c.MADOAN AND d.NGAYBD BETWEEN '"+tu+"' AND '"+den+"' "+
+                        "AND d.MATOUR = '" + ma + "' AND t.MATOUR=d.MATOUR";
+            Console.WriteLine(sql);
+            SqlDataAdapter sda = new SqlDataAdapter(sql, _conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
+
+        public DataTable ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(string ma, string tu, string den, string doan)
+        {
+            string sql = "SELECT c.GIATRI, d.MADOAN, t.MATOUR " +
+                        "FROM dbo.CHIPHI c, dbo.LOAICP l, dbo.DOAN d, dbo.TOUR t " +
+                        "WHERE l.MALOAICP=c.MALOAICP AND d.MADOAN = c.MADOAN AND d.NGAYBD BETWEEN '" + tu + "' AND '" + den + "' " +
+                        "AND d.MATOUR = '" + ma + "' AND t.MATOUR=d.MATOUR AND d.MADOAN = '"+doan+"'";
+            Console.WriteLine(sql);
+            SqlDataAdapter sda = new SqlDataAdapter(sql, _conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
     }
 }
