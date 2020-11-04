@@ -28,5 +28,17 @@ namespace BUS_QuanLy
         {
             return dalDoan.DSKhach(ma);
         }
+        public bool themDoan(DoanDTO l)
+        {
+            return dalDoan.themDoan(l);
+        }
+        public bool xoaDoan(String ma)
+        {
+            return dalDoan.xoaDoan(ma);
+        }
+        public bool suaDoan(DoanDTO l)
+        {
+            return dalDoan.suaDoan(l);
+        }
     }
 }

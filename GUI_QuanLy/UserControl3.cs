@@ -31,6 +31,7 @@ namespace GUI_QuanLy
         private void button1_Click(object sender, EventArgs e)
         {
             userControl3_21.Show();
+            userControl3_11.Hide();
         }
     }
 }

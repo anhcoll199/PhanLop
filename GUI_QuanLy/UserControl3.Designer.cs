@@ -32,6 +32,7 @@
             this.userControl3_11 = new GUI_QuanLy.UserControl3_1();
             this.button1 = new System.Windows.Forms.Button();
             this.userControl3_21 = new GUI_QuanLy.UserControl3_2();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button4
@@ -68,10 +69,20 @@
             this.userControl3_21.Size = new System.Drawing.Size(553, 263);
             this.userControl3_21.TabIndex = 9;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 49);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Doanh Thu";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // UserControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.userControl3_21);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.userControl3_11);
@@ -89,5 +100,6 @@
         private UserControl3_1 userControl3_11;
         private System.Windows.Forms.Button button1;
         private UserControl3_2 userControl3_21;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -15,7 +15,7 @@ namespace GUI_QuanLy
     public partial class UserControl2 : UserControl
     {
         TourBUS bus = new TourBUS();
-        public static string ma1 = "";
+        //public static string ma1 = "";
         public UserControl2()
         {
             InitializeComponent();
@@ -160,10 +160,14 @@ namespace GUI_QuanLy
             if (BangTour.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = BangTour.SelectedRows[0];
-                ma1 = row.Cells[0].Value.ToString();
+                string ma1 = row.Cells[0].Value.ToString();
 
-                XemGiaTour g = new XemGiaTour();
-                g.ShowDialog();
+                //XemGiaTour g = new XemGiaTour();
+                //g.ShowDialog();
+
+                string gia = bus.XemGiaTheoTour(ma1);
+
+                txtGia.Text = gia.ToString();
             }
             else
             {

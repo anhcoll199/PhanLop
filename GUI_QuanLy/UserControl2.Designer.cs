@@ -42,12 +42,16 @@
             this.btnXemGia = new System.Windows.Forms.Button();
             this.btnDS = new System.Windows.Forms.Button();
             this.BangTour = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtGia = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BangTour)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtGia);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cbbLoai);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -180,6 +184,23 @@
             this.BangTour.TabIndex = 12;
             this.BangTour.Click += new System.EventHandler(this.BangTour_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 108);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Giá tour";
+            // 
+            // txtGia
+            // 
+            this.txtGia.Enabled = false;
+            this.txtGia.Location = new System.Drawing.Point(101, 103);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(100, 20);
+            this.txtGia.TabIndex = 7;
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,5 +239,7 @@
         private System.Windows.Forms.Button btnXemGia;
         private System.Windows.Forms.Button btnDS;
         private System.Windows.Forms.DataGridView BangTour;
+        private System.Windows.Forms.TextBox txtGia;
+        private System.Windows.Forms.Label label3;
     }
 }

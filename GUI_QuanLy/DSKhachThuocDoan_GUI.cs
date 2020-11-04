@@ -29,8 +29,8 @@ namespace GUI_QuanLy
 
         private void cbb1_TextChanged(object sender, EventArgs e)
         {
-            txt1.Text = cbb1.Text;
-            Bang.DataSource = bus.getDSKhach(txt1.Text);
+            //txt1.Text = cbb1.Text;
+            Bang.DataSource = bus.getDSKhach(cbb1.Text);
         }
     }
 }

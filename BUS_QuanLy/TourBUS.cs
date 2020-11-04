@@ -47,5 +47,6 @@ namespace BUS_QuanLy
         {
             return dal.XemGiaTheoTour(ma);
         }
+
     }
 }

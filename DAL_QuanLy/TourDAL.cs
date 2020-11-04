@@ -50,7 +50,7 @@ namespace DAL_QuanLy
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -77,7 +77,7 @@ namespace DAL_QuanLy
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -109,7 +109,7 @@ namespace DAL_QuanLy
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {

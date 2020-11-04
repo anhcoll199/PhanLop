@@ -8,13 +8,13 @@ namespace DTO_QuanLy
     public class DoanDTO
     {
         private String MaDoan, MaTour;
-        private DateTime NgayBD, NgayKT;
+        private string NgayBD, NgayKT;
 
         public DoanDTO()
         {
 
         }
-        public DoanDTO(String madoan, DateTime bd, DateTime kt, String matour)
+        public DoanDTO(String madoan, string bd, string kt, String matour)
         {
             this.MaDoan1 = madoan;
             this.NgayBD1 = bd;
@@ -24,7 +24,7 @@ namespace DTO_QuanLy
 
         public string MaDoan1 { get => MaDoan; set => MaDoan = value; }
         public string MaTour1 { get => MaTour; set => MaTour = value; }
-        public DateTime NgayBD1 { get => NgayBD; set => NgayBD = value; }
-        public DateTime NgayKT1 { get => NgayKT; set => NgayKT = value; }
+        public string NgayBD1 { get => NgayBD; set => NgayBD = value; }
+        public string NgayKT1 { get => NgayKT; set => NgayKT = value; }
     }
 }

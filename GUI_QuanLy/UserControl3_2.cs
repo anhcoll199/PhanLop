@@ -59,12 +59,6 @@ namespace GUI_QuanLy
 
         private void cbbMaDoan_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //DataTable dtMaDoan = bus1.getMaDoanDeThongKeChiPhi(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text);
-            //DataRow row = dtMaDoan.NewRow();
-            //row[0] = -1;
-            //dtMaDoan.Rows.Add(row);
-            //cbbMaDoan.DataSource = dtMaDoan;
-            //cbbMaDoan.Text = "-1";
             if(cbbMaDoan.SelectedIndex == 0)
             {
                 dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text);
