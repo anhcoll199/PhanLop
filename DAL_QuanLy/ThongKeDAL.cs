@@ -85,5 +85,20 @@ namespace DAL_QuanLy
             sda.Fill(dt);
             return dt;
         }
+
+        public DataTable ThongKeDoanhThu(string ma, string bd, string kt)
+        {
+            string sql = "SELECT d.MADOAN, d.NGAYBD, d.NGAYKT, COUNT(ctd.MAKHACH) AS TONGSOKHACH, g.GIATIEN,SUM(c.GIATRI) AS TONGCHIPHI, (COUNT(ctd.MAKHACH)*g.GIATIEN) AS TONGTHU, ((COUNT(ctd.MAKHACH)*g.GIATIEN) - SUM(c.GIATRI)) AS DOANHTHU" +
+                " FROM dbo.DOAN d, dbo.KHACH k, dbo.CHITIETDOAN ctd, dbo.GIATOUR g, dbo.TOUR t, dbo.CHIPHI c" +
+                " WHERE d.MADOAN = ctd.MADOAN AND ctd.MAKHACH = k.MAKHACH AND g.MATOUR = t.MATOUR AND t.MATOUR = d.MATOUR AND c.MADOAN = d.MADOAN AND t.MATOUR = '"+ma+ "' AND d.NGAYBD BETWEEN '"+bd+"' AND '"+kt+"'" +
+                " GROUP BY d.MADOAN, d.NGAYBD, d.NGAYKT, g.GIATIEN";
+
+            Console.WriteLine(sql);
+
+            SqlDataAdapter da = new SqlDataAdapter(sql, _conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

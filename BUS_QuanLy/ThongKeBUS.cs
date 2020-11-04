@@ -36,5 +36,10 @@ namespace BUS_QuanLy
         {
             return dal.ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(ma, tu, den, doan);
         }
+
+        public DataTable ThongKeDoanhThu(string ma, string bd, string kt)
+        {
+            return dal.ThongKeDoanhThu(ma, bd, kt);
+        }
     }
 }

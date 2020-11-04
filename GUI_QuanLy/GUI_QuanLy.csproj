@@ -142,6 +142,18 @@
     <Compile Include="UserControl3_2.Designer.cs">
       <DependentUpon>UserControl3_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl3_3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3_3.Designer.cs">
+      <DependentUpon>UserControl3_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3_4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3_4.Designer.cs">
+      <DependentUpon>UserControl3_4.cs</DependentUpon>
+    </Compile>
     <Compile Include="XemGiaTour.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +213,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl3_2.resx">
       <DependentUpon>UserControl3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3_3.resx">
+      <DependentUpon>UserControl3_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3_4.resx">
+      <DependentUpon>UserControl3_4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XemGiaTour.resx">
       <DependentUpon>XemGiaTour.cs</DependentUpon>
