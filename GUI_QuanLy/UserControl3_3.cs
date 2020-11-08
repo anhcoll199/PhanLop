@@ -27,7 +27,7 @@ namespace GUI_QuanLy
                 comboBox1.Items.Add(bus1.getMaTour().Rows[i]["MATOUR"].ToString());
             }    
         }
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
             string ma = comboBox1.Text;
@@ -37,6 +37,12 @@ namespace GUI_QuanLy
             if(ma != "" && bd != "" && kt != "")
             {
                 dataGridView1.DataSource = bus.ThongKeDoanhThu(ma, bd, kt);
+                int tong = 0;
+                for(int i = 0; i<dataGridView1.Rows.Count-1; i++)
+                {
+                    tong = tong + Int32.Parse(dataGridView1.Rows[i].Cells["DOANHTHU"].Value.ToString());
+                }
+                textBox1.Text = tong.ToString();
             }    
         }
     }

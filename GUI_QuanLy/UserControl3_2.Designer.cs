@@ -56,13 +56,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(27, 101);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 227);
+            this.dataGridView1.Size = new System.Drawing.Size(606, 287);
             this.dataGridView1.TabIndex = 1;
             // 
             // txtTenTour
             // 
             this.txtTenTour.Enabled = false;
-            this.txtTenTour.Location = new System.Drawing.Point(265, 20);
+            this.txtTenTour.Location = new System.Drawing.Point(306, 19);
             this.txtTenTour.Name = "txtTenTour";
             this.txtTenTour.Size = new System.Drawing.Size(145, 20);
             this.txtTenTour.TabIndex = 2;
@@ -79,7 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(203, 23);
+            this.label2.Location = new System.Drawing.Point(230, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 4;
@@ -114,7 +114,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(464, 18);
+            this.button1.Location = new System.Drawing.Point(543, 17);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.cbbMatour);
             this.Name = "UserControl3_2";
-            this.Size = new System.Drawing.Size(544, 356);
+            this.Size = new System.Drawing.Size(682, 411);
             this.Load += new System.EventHandler(this.UserControl3_2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

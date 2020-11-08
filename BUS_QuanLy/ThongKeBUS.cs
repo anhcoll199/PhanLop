@@ -41,5 +41,10 @@ namespace BUS_QuanLy
         {
             return dal.ThongKeDoanhThu(ma, bd, kt);
         }
+
+        public DataTable TinhHinhHD(string ma)
+        {
+            return dal.TinhHinhHD(ma);
+        }
     }
 }

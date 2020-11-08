@@ -35,6 +35,7 @@
             this.userControl3_21 = new GUI_QuanLy.UserControl3_2();
             this.userControl3_11 = new GUI_QuanLy.UserControl3_1();
             this.button1 = new System.Windows.Forms.Button();
+            this.userControl3_41 = new GUI_QuanLy.UserControl3_4();
             this.SuspendLayout();
             // 
             // btnSoLanDiTour
@@ -95,13 +96,22 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 23);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Thống kê doanh số";
+            this.button1.Text = "Tình hình hoạt động";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // userControl3_41
+            // 
+            this.userControl3_41.Location = new System.Drawing.Point(7, 106);
+            this.userControl3_41.Name = "userControl3_41";
+            this.userControl3_41.Size = new System.Drawing.Size(558, 306);
+            this.userControl3_41.TabIndex = 13;
             // 
             // UserControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControl3_41);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.userControl3_31);
             this.Controls.Add(this.btnDoanhThu);
@@ -125,5 +135,6 @@
         private System.Windows.Forms.Button btnDoanhThu;
         private UserControl3_3 userControl3_31;
         private System.Windows.Forms.Button button1;
+        private UserControl3_4 userControl3_41;
     }
 }

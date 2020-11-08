@@ -44,3 +44,5 @@ D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3_1.resources
 D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3_2.resources
 D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.ChiTietTour.resources
 D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3_3.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.UserControl3_4.resources
+D:\QuanLyThanhVien\GUI_QuanLy\obj\Debug\GUI_QuanLy.Main1.resources

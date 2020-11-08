@@ -8,4 +8,3 @@ D:\QuanLyThanhVien\DTO_QuanLy\bin\Debug\DTO_QuanLy.pdb
 D:\QuanLyThanhVien\DTO_QuanLy\obj\Debug\DTO_QuanLy.csproj.CoreCompileInputs.cache
 D:\QuanLyThanhVien\DTO_QuanLy\obj\Debug\DTO_QuanLy.dll
 D:\QuanLyThanhVien\DTO_QuanLy\obj\Debug\DTO_QuanLy.pdb
-D:\QuanLyThanhVien\DTO_QuanLy\obj\Debug\DTO_QuanLy.csprojAssemblyReference.cache
