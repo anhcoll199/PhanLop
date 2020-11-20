@@ -18,7 +18,7 @@ namespace DAL_QuanLy
             return dt;
         }
 
-        /// Thêm thành viên
+        
 
         public bool themGia(GiaTourDTO t)
         {
@@ -33,7 +33,7 @@ namespace DAL_QuanLy
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -51,7 +51,7 @@ namespace DAL_QuanLy
             try
             {
                 _conn.Open();
-                string SQL = string.Format("UPDATE GIATOUR SET GIATIEN = {0}, TGBD = '{1}', TGKT = '{2}', MATOUR = '{3}' WHERE MAGIA = '{4}'", l.GiaTien1, l.TGBD1, l.TGKT1,l.MaTour1, l.MaGia1);
+                string SQL = string.Format("UPDATE GIATOUR SET GIATIEN = {0} WHERE MAGIA = '{1}'", l.GiaTien1, l.MaGia1);
                 SqlCommand cmd = new SqlCommand(SQL, _conn);
 
                 if (cmd.ExecuteNonQuery() > 0)
@@ -60,7 +60,7 @@ namespace DAL_QuanLy
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -92,7 +92,7 @@ namespace DAL_QuanLy
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {

@@ -96,17 +96,7 @@ ALTER TABLE dbo.NVTHUOCDOAN ADD CONSTRAINT fk_nvthuocdoan1 FOREIGN KEY(MANV) REF
 ALTER TABLE dbo.CHITIETDOAN ADD CONSTRAINT pk_ctdoan PRIMARY KEY (MADOAN,MAKHACH)
 ALTER TABLE dbo.CHIPHI ADD CONSTRAINT pk_cp PRIMARY KEY(MALOAICP,MADOAN) 
 
-SELECT* FROM dbo.CHITIETDOAN
-SELECT* FROM dbo.KHACH
-SELECT* FROM dbo.CTTOUR
-SELECT* FROM dbo.LOAITOUR
-SELECT* FROM dbo.TOUR
 
-SELECT* FROM dbo.DIADIEM
-SELECT* FROM dbo.GIATOUR
-SELECT* FROM dbo.NHANVIEN
-SELECT* FROM dbo.DOAN
-SELECT* FROM dbo.NVTHUOCDOAN
 
 
 SELECT td.NHIEMVU, d.MATOUR, d.MADOAN,t.TENTOUR 
@@ -211,3 +201,54 @@ DROP TABLE #tam
 
 
 --------------------------------------------------------------
+SELECT* FROM dbo.CHITIETDOAN
+SELECT* FROM dbo.KHACH
+SELECT* FROM dbo.CTTOUR
+SELECT* FROM dbo.LOAITOUR
+SELECT* FROM dbo.TOUR
+
+SELECT* FROM dbo.DIADIEM
+SELECT* FROM dbo.GIATOUR
+SELECT* FROM dbo.NHANVIEN
+SELECT* FROM dbo.DOAN
+SELECT* FROM dbo.NVTHUOCDOAN
+SELECT* FROM dbo.GIATOUR
+
+-------------------------------------------------------------
+
+INSERT dbo.GIATOUR
+        ( MAGIA, GIATIEN, TGBD, TGKT, MATOUR )
+VALUES  ( N'GT003', -- MAGIA - nvarchar(10)
+          200000, -- GIATIEN - float
+          GETDATE(), -- TGBD - date
+          GETDATE(), -- TGKT - date
+          N'T001'  -- MATOUR - nvarchar(10)
+          )
+
+DECLARE @i INT = 19
+DECLARE @i1 INT = 50
+DECLARE @ma NVARCHAR(10) = N'D019'
+DECLARE @makh NVARCHAR(10) = N'K0'
+DECLARE @c INT = 0
+WHILE @i<20
+	BEGIN
+		--SET @ma = CONCAT(@ma,@i)
+		SET @makh = CONCAT(@makh,@i1)
+		--SET @matour = CONCAT(@matour,@i1)
+		INSERT dbo.CHITIETDOAN
+		        ( MADOAN, MAKHACH )
+		VALUES  ( @ma, -- MADOAN - nvarchar(10)
+		          @makh  -- MAKHACH - nvarchar(10)
+		          )
+		PRINT @ma
+		PRINT @makh
+		SET @i1 = @i1 + 1
+		SET @c = @c +1
+		SET @makh =  N'K0'
+		IF(@c =5)
+			BREAK
+	END
+SELECT* FROM dbo.DOAN
+SELECT* FROM dbo.GIATOUR
+
+select * from giatour where matour = 'T002'

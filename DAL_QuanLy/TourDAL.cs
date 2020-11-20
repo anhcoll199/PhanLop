@@ -141,30 +141,60 @@ namespace DAL_QuanLy
             return dt;
         }
 
-        public string XemGiaTheoTour(String ma)
+        public DataTable XemGiaTheoTour(String ma)
         {
-            _conn.Open();
-            string tien = "";
+            //_conn.Open();
+            //string tien = "";
 
-            SqlCommand dbcommand = new SqlCommand();
-            dbcommand.CommandText = @"select giatien from giatour where matour = '" + ma + "'";
-            dbcommand.Connection = _conn;
-            Console.WriteLine(dbcommand.CommandText);
+            //SqlCommand dbcommand = new SqlCommand();
+            //dbcommand.CommandText = @"select * from giatour where matour = '" + ma + "'";
+            //dbcommand.Connection = _conn;
+            //Console.WriteLine(dbcommand.CommandText);
 
-            //tien = (Int32)dbcommand.ExecuteScalar();
+            ////tien = (Int32)dbcommand.ExecuteScalar();
+            ////Console.WriteLine(tien);
+
+            //using (SqlDataReader dr = dbcommand.ExecuteReader())
+            //{
+            //    while (dr.Read())
+            //    {
+            //        tien = dr[0].ToString();
+            //    }
+            //}
             //Console.WriteLine(tien);
+            //_conn.Close();
 
-            using (SqlDataReader dr = dbcommand.ExecuteReader())
+            //return tien;
+            String query = "select * from giatour where matour = '" + ma + "'";
+            Console.WriteLine(query);
+            SqlDataAdapter sda = new SqlDataAdapter(query, _conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
+
+        public bool themCTTour(TourDetailDTO t)
+        {
+            try
             {
-                while (dr.Read())
-                {
-                    tien = dr[0].ToString();
-                }
-            }
-            Console.WriteLine(tien);
-            _conn.Close();
+                _conn.Open();
+                string SQL = string.Format("INSERT INTO CTTOUR(MATOUR, MADD, THUTU) VALUES ('{0}', '{1}', '{2}')", t.MaTour1, t.MaDiaDiem1, t.thutu1);
+                SqlCommand cmd = new SqlCommand(SQL, _conn);
+                Console.WriteLine(SQL);
+                if (cmd.ExecuteNonQuery() > 0)
+                    return true;
 
-            return tien;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                _conn.Close();
+            }
+
+            return false;
         }
     }
 }

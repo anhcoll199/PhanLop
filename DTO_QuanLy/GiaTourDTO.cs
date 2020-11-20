@@ -9,13 +9,13 @@ namespace DTO_QuanLy
     {
         private String MaGia, MaTour;
         private float GiaTien;
-        private DateTime TGBD, TGKT;
+        private String TGBD, TGKT;
 
         public GiaTourDTO()
         {
 
         }
-        public GiaTourDTO(String magia, String matour, float gia, DateTime bd, DateTime kt)
+        public GiaTourDTO(String magia, String matour, float gia, String bd, String kt)
         {
             this.MaGia1 = magia;
             this.MaTour1 = matour;
@@ -28,7 +28,7 @@ namespace DTO_QuanLy
         public string MaGia1 { get => MaGia; set => MaGia = value; }
         public string MaTour1 { get => MaTour; set => MaTour = value; }
         public float GiaTien1 { get => GiaTien; set => GiaTien = value; }
-        public DateTime TGBD1 { get => TGBD; set => TGBD = value; }
-        public DateTime TGKT1 { get => TGKT; set => TGKT = value; }
+        public String TGBD1 { get => TGBD; set => TGBD = value; }
+        public String TGKT1 { get => TGKT; set => TGKT = value; }
     }
 }

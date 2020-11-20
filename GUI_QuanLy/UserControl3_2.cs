@@ -26,11 +26,17 @@ namespace GUI_QuanLy
                 cbbMatour.Items.Add(bus.getMaTour().Rows[i]["MATOUR"].ToString());
             }    
         }
-        private string getMatour()
-        {
-            string matour = cbbMatour.SelectedItem.ToString();
-            return matour;
-        }
+        //private string getMatour()
+        //{
+        //    string matour = "";
+        //    if (cbbMatour.Text != null)
+        //    {
+        //        matour = cbbMatour.SelectedItem.ToString();
+        //        return matour;
+        //    }
+        //    else
+        //        return matour;
+        //}
 
         //private string getMaDoan()
         //{
@@ -40,7 +46,7 @@ namespace GUI_QuanLy
 
         private void cbbMatour_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string matour = getMatour();
+            string matour = cbbMatour.Text;
             DataTable d = bus.TimKiemTheoMa(matour);
             txtTenTour.Text = d.Rows[0]["TENTOUR"].ToString();
 
@@ -48,25 +54,32 @@ namespace GUI_QuanLy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ma = getMatour();
-            cbbMaDoan.Items.Add("Tất cả");
-            for (int i = 0; i < bus1.getMaDoanDeThongKeChiPhi(ma, dateTimePicker1.Text, dateTimePicker2.Text).Rows.Count; i++)
+            if(cbbMatour.Text!=null)
             {
-                cbbMaDoan.Items.Add(bus1.getMaDoanDeThongKeChiPhi(ma, dateTimePicker1.Text, dateTimePicker2.Text).Rows[i]["MADOAN"].ToString());
-            }
-            dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text);
+                string ma = cbbMatour.Text;
+                cbbMaDoan.Items.Add("Tất cả");
+                for (int i = 0; i < bus1.getMaDoanDeThongKeChiPhi(ma, dateTimePicker1.Text, dateTimePicker2.Text).Rows.Count; i++)
+                {
+                    cbbMaDoan.Items.Add(bus1.getMaDoanDeThongKeChiPhi(ma, dateTimePicker1.Text, dateTimePicker2.Text).Rows[i]["MADOAN"].ToString());
+                }
+                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(cbbMatour.Text, dateTimePicker1.Text, dateTimePicker2.Text);
+            }    
+            else
+            {
+                MessageBox.Show("Ko thể thống kê");
+            }    
         }
 
         private void cbbMaDoan_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cbbMaDoan.SelectedIndex == 0)
             {
-                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text);
+                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTour(cbbMatour.Text, dateTimePicker1.Text, dateTimePicker2.Text);
             }   
             else
             {
                 string madoan = cbbMaDoan.Text;
-                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(getMatour(), dateTimePicker1.Text, dateTimePicker2.Text,madoan);
+                dataGridView1.DataSource = bus1.ThongKeChiPhiTatCaDoanTheoTourCoMaDoan(cbbMatour.Text, dateTimePicker1.Text, dateTimePicker2.Text,madoan);
             }
         }
     }

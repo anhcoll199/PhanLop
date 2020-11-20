@@ -85,5 +85,10 @@ namespace GUI_QuanLy
             userControl3_21.Hide();
             userControl3_31.Hide();
         }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

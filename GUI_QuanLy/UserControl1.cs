@@ -113,11 +113,11 @@ namespace GUI_QuanLy
 
         private void BangDoan_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = BangDoan.SelectedRows[0];
-            txtMaDoan.Text = row.Cells[0].Value.ToString();
-            txtBD.Text = row.Cells[1].Value.ToString();
-            txtKT.Text = row.Cells[2].Value.ToString();
-            cbbMaTour.Text = row.Cells[3].Value.ToString();
+            int VT = BangDoan.CurrentCell.RowIndex;
+            txtMaDoan.Text = BangDoan.Rows[VT].Cells[0].Value.ToString();
+            txtBD.Text = BangDoan.Rows[VT].Cells[1].Value.ToString();
+            txtKT.Text = BangDoan.Rows[VT].Cells[2].Value.ToString();
+            cbbMaTour.Text = BangDoan.Rows[VT].Cells[3].Value.ToString();
 
             txtMaDoan.Enabled = false;
         }

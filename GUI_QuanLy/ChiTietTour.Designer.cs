@@ -114,6 +114,7 @@
             this.BtnThemPhieu.TabIndex = 6;
             this.BtnThemPhieu.Text = "Thêm Chi Tiết";
             this.BtnThemPhieu.UseVisualStyleBackColor = true;
+            this.BtnThemPhieu.Click += new System.EventHandler(this.BtnThemPhieu_Click);
             // 
             // label2
             // 
@@ -157,6 +158,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "ChiTietTour";
             this.Text = "ChiTietTour";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ChiTietTour_FormClosing);
             this.Load += new System.EventHandler(this.ChiTietTour_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

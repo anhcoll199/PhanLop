@@ -37,12 +37,13 @@
             this.tìnhHìnhHoạtĐộngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sốLầnĐiTourCủaNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.userControl3_41 = new GUI_QuanLy.UserControl3_4();
+            this.userControl3_31 = new GUI_QuanLy.UserControl3_3();
             this.userControl3_21 = new GUI_QuanLy.UserControl3_2();
             this.userControl3_11 = new GUI_QuanLy.UserControl3_1();
             this.userControl21 = new GUI_QuanLy.UserControl2();
             this.userControl11 = new GUI_QuanLy.UserControl1();
-            this.userControl3_31 = new GUI_QuanLy.UserControl3_3();
-            this.userControl3_41 = new GUI_QuanLy.UserControl3_4();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,12 +113,27 @@
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýTourToolStripMenuItem,
-            this.thốngKêToolStripMenuItem});
+            this.thốngKêToolStripMenuItem,
+            this.thoátToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(662, 24);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
+            // 
+            // userControl3_41
+            // 
+            this.userControl3_41.Location = new System.Drawing.Point(8, 27);
+            this.userControl3_41.Name = "userControl3_41";
+            this.userControl3_41.Size = new System.Drawing.Size(671, 458);
+            this.userControl3_41.TabIndex = 7;
+            // 
+            // userControl3_31
+            // 
+            this.userControl3_31.Location = new System.Drawing.Point(8, 27);
+            this.userControl3_31.Name = "userControl3_31";
+            this.userControl3_31.Size = new System.Drawing.Size(654, 407);
+            this.userControl3_31.TabIndex = 6;
             // 
             // userControl3_21
             // 
@@ -147,24 +163,18 @@
             this.userControl11.Size = new System.Drawing.Size(638, 423);
             this.userControl11.TabIndex = 2;
             // 
-            // userControl3_31
+            // thoátToolStripMenuItem
             // 
-            this.userControl3_31.Location = new System.Drawing.Point(8, 27);
-            this.userControl3_31.Name = "userControl3_31";
-            this.userControl3_31.Size = new System.Drawing.Size(654, 407);
-            this.userControl3_31.TabIndex = 6;
-            // 
-            // userControl3_41
-            // 
-            this.userControl3_41.Location = new System.Drawing.Point(8, 27);
-            this.userControl3_41.Name = "userControl3_41";
-            this.userControl3_41.Size = new System.Drawing.Size(654, 407);
-            this.userControl3_41.TabIndex = 7;
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // Main1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(662, 462);
             this.Controls.Add(this.userControl3_41);
             this.Controls.Add(this.userControl3_31);
@@ -200,5 +210,6 @@
         private UserControl3_2 userControl3_21;
         private UserControl3_3 userControl3_31;
         private UserControl3_4 userControl3_41;
+        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
     }
 }

@@ -31,17 +31,16 @@
             this.BangDoan = new System.Windows.Forms.DataGridView();
             this.btnDSKhach = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtKT = new System.Windows.Forms.DateTimePicker();
+            this.txtBD = new System.Windows.Forms.DateTimePicker();
             this.cbbMaTour = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaDoan = new System.Windows.Forms.TextBox();
-            this.txtBD = new System.Windows.Forms.DateTimePicker();
-            this.txtKT = new System.Windows.Forms.DateTimePicker();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BangDoan)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +82,24 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin Đoàn khách";
+            // 
+            // txtKT
+            // 
+            this.txtKT.CustomFormat = "yyyy/MM/dd";
+            this.txtKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtKT.Location = new System.Drawing.Point(226, 49);
+            this.txtKT.Name = "txtKT";
+            this.txtKT.Size = new System.Drawing.Size(84, 20);
+            this.txtKT.TabIndex = 7;
+            // 
+            // txtBD
+            // 
+            this.txtBD.CustomFormat = "yyyy/MM/dd";
+            this.txtBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.txtBD.Location = new System.Drawing.Point(101, 49);
+            this.txtBD.Name = "txtBD";
+            this.txtBD.Size = new System.Drawing.Size(84, 20);
+            this.txtBD.TabIndex = 6;
             // 
             // cbbMaTour
             // 
@@ -126,24 +143,6 @@
             this.txtMaDoan.Size = new System.Drawing.Size(280, 20);
             this.txtMaDoan.TabIndex = 0;
             // 
-            // txtBD
-            // 
-            this.txtBD.CustomFormat = "yyyy/MM/dd";
-            this.txtBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtBD.Location = new System.Drawing.Point(101, 49);
-            this.txtBD.Name = "txtBD";
-            this.txtBD.Size = new System.Drawing.Size(84, 20);
-            this.txtBD.TabIndex = 6;
-            // 
-            // txtKT
-            // 
-            this.txtKT.CustomFormat = "yyyy/MM/dd";
-            this.txtKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtKT.Location = new System.Drawing.Point(226, 49);
-            this.txtKT.Name = "txtKT";
-            this.txtKT.Size = new System.Drawing.Size(84, 20);
-            this.txtKT.TabIndex = 7;
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(398, 18);
@@ -174,20 +173,10 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(457, 76);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(53, 45);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -219,6 +208,5 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnExit;
     }
 }

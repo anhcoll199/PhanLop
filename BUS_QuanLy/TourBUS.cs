@@ -43,10 +43,13 @@ namespace BUS_QuanLy
         {
             return dal.DSDiaDiem(ma);
         }
-        public string XemGiaTheoTour(string ma)
+        public DataTable XemGiaTheoTour(string ma)
         {
             return dal.XemGiaTheoTour(ma);
         }
-
+        public bool ThemCTtour(TourDetailDTO dto )
+        {
+            return dal.themCTTour(dto);
+        }
     }
 }

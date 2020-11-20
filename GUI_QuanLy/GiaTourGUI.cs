@@ -38,7 +38,7 @@ namespace GUI_QuanLy
             if (cbbMaTour.GetItemText(cbbMaTour.SelectedItem) != "" && txtBD.Text != "" && txtMa.Text != "" && txtGia.Text != "" && txtKT.Text !="")
             {
                 String maTour = cbbMaTour.GetItemText(cbbMaTour.SelectedItem);
-                GiaTourDTO DTO = new GiaTourDTO(txtMa.Text, maTour, float.Parse(txtGia.Text), txtBD.Value, txtKT.Value);
+                GiaTourDTO DTO = new GiaTourDTO(txtMa.Text, maTour, float.Parse(txtGia.Text), txtBD.Text, txtKT.Text);
                 if (bus.themGia(DTO))
                 {
                     MessageBox.Show("Thêm thành công");

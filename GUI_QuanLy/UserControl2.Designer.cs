@@ -38,20 +38,16 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnXemGia = new System.Windows.Forms.Button();
             this.btnDS = new System.Windows.Forms.Button();
             this.BangTour = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtGia = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BangTour)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtGia);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.cbbLoai);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
@@ -118,7 +114,7 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(406, 18);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(53, 45);
+            this.btnAdd.Size = new System.Drawing.Size(53, 52);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -128,7 +124,7 @@
             // 
             this.btnEdit.Location = new System.Drawing.Point(465, 18);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(53, 45);
+            this.btnEdit.Size = new System.Drawing.Size(53, 52);
             this.btnEdit.TabIndex = 6;
             this.btnEdit.Text = "Sửa";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -138,27 +134,17 @@
             // 
             this.btnDelete.Location = new System.Drawing.Point(524, 18);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(53, 45);
+            this.btnDelete.Size = new System.Drawing.Size(53, 52);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(465, 88);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(53, 45);
-            this.btnExit.TabIndex = 8;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // btnXemGia
             // 
             this.btnXemGia.Location = new System.Drawing.Point(406, 88);
             this.btnXemGia.Name = "btnXemGia";
-            this.btnXemGia.Size = new System.Drawing.Size(53, 45);
+            this.btnXemGia.Size = new System.Drawing.Size(53, 52);
             this.btnXemGia.TabIndex = 10;
             this.btnXemGia.Text = "Xem giá";
             this.btnXemGia.UseVisualStyleBackColor = true;
@@ -168,7 +154,7 @@
             // 
             this.btnDS.Location = new System.Drawing.Point(524, 88);
             this.btnDS.Name = "btnDS";
-            this.btnDS.Size = new System.Drawing.Size(53, 45);
+            this.btnDS.Size = new System.Drawing.Size(53, 52);
             this.btnDS.TabIndex = 11;
             this.btnDS.Text = "DS Địa điểm";
             this.btnDS.UseVisualStyleBackColor = true;
@@ -184,31 +170,24 @@
             this.BangTour.TabIndex = 12;
             this.BangTour.Click += new System.EventHandler(this.BangTour_Click);
             // 
-            // label3
+            // button1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Giá tour";
-            // 
-            // txtGia
-            // 
-            this.txtGia.Enabled = false;
-            this.txtGia.Location = new System.Drawing.Point(101, 103);
-            this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(100, 20);
-            this.txtGia.TabIndex = 7;
+            this.button1.Location = new System.Drawing.Point(465, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 52);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Cập nhật giá tour";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BangTour);
             this.Controls.Add(this.btnDS);
             this.Controls.Add(this.btnXemGia);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
@@ -235,11 +214,9 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnXemGia;
         private System.Windows.Forms.Button btnDS;
         private System.Windows.Forms.DataGridView BangTour;
-        private System.Windows.Forms.TextBox txtGia;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

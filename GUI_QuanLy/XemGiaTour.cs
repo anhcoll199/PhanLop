@@ -21,12 +21,10 @@ namespace GUI_QuanLy
 
         private void XemGiaTour_Load(object sender, EventArgs e)
         {
-           // string matour;
-           //// matour = UserControl2.ma1;
+            string matour;
+            matour = UserControl2.ma1;
 
-           // string gia = bus.XemGiaTheoTour(matour);
-
-           // txtGia.Text = gia.ToString();
+            dataGridView1.DataSource = bus.XemGiaTheoTour(matour);
         }
     }
 }

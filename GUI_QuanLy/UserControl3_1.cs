@@ -40,8 +40,11 @@ namespace GUI_QuanLy
 
 
             DataTable d = bus.ThongKeSoLanNhanVienDiTour(tu, den, ma);
-            txtSoLan.Text = d.Rows[0]["TONGSO"].ToString();
-            txtTenNhanVien.Text = d.Rows[0]["TENNV"].ToString(); 
+            if(Bang1.RowCount >1)
+            {
+                txtSoLan.Text = d.Rows[0]["TONGSO"].ToString();
+                txtTenNhanVien.Text = d.Rows[0]["TENNV"].ToString();
+            }    
         }
     }
 }

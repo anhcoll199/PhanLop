@@ -15,7 +15,7 @@ namespace GUI_QuanLy
     public partial class UserControl2 : UserControl
     {
         TourBUS bus = new TourBUS();
-        //public static string ma1 = "";
+        public static string ma1 = "";
         public UserControl2()
         {
             InitializeComponent();
@@ -41,6 +41,7 @@ namespace GUI_QuanLy
                 {
                     MessageBox.Show("Thêm thành công");
                     BangTour.DataSource = bus.getTour(); // refresh datagridview
+                    ma1 = txtMa.Text;
                     ChiTietTour g = new ChiTietTour();
                     g.ShowDialog();
                 }
@@ -62,10 +63,11 @@ namespace GUI_QuanLy
 
         private void BangTour_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = BangTour.SelectedRows[0];
-            txtMa.Text = row.Cells[0].Value.ToString();
-            txtTen.Text = row.Cells[1].Value.ToString();
-            cbbLoai.Text = row.Cells[2].Value.ToString();
+
+            int VT = BangTour.CurrentCell.RowIndex;
+            txtMa.Text = BangTour.Rows[VT].Cells[0].Value.ToString();
+            txtTen.Text = BangTour.Rows[VT].Cells[1].Value.ToString();
+            cbbLoai.Text = BangTour.Rows[VT].Cells[2].Value.ToString();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -160,18 +162,39 @@ namespace GUI_QuanLy
             if (BangTour.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = BangTour.SelectedRows[0];
-                string ma1 = row.Cells[0].Value.ToString();
+                ma1 = row.Cells[0].Value.ToString();
 
-                //XemGiaTour g = new XemGiaTour();
-                //g.ShowDialog();
+                XemGiaTour g = new XemGiaTour();
+                g.ShowDialog();
 
-                string gia = bus.XemGiaTheoTour(ma1);
+                //string gia = bus.XemGiaTheoTour(ma1);
 
-                txtGia.Text = gia.ToString();
+
             }
             else
             {
                 MessageBox.Show("Hãy chọn tour muốn xem giá");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (BangTour.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = BangTour.SelectedRows[0];
+                ma1 = row.Cells[0].Value.ToString();
+
+
+                ThêmGiaTour g = new ThêmGiaTour();
+                g.ShowDialog();
+
+                //string gia = bus.XemGiaTheoTour(ma1);
+
+
+            }
+            else
+            {
+                MessageBox.Show("Hãy chọn tour muốn thêm giá");
             }
         }
     }
