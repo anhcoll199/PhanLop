@@ -12,7 +12,7 @@ namespace DAL_QuanLy
     {
         public DataTable getNhanVien()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV FROM NHANVIEN",_conn);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT MANV, TENNV FROM NHANVIEN",_conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
             return dt;

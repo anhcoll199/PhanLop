@@ -52,14 +52,15 @@
             this.cbbNhanVien.FormattingEnabled = true;
             this.cbbNhanVien.Location = new System.Drawing.Point(111, 59);
             this.cbbNhanVien.Name = "cbbNhanVien";
-            this.cbbNhanVien.Size = new System.Drawing.Size(111, 21);
+            this.cbbNhanVien.Size = new System.Drawing.Size(211, 21);
             this.cbbNhanVien.TabIndex = 0;
+            this.cbbNhanVien.SelectedIndexChanged += new System.EventHandler(this.cbbNhanVien_SelectedIndexChanged);
             // 
             // txtTu
             // 
             this.txtTu.CustomFormat = "yyyy/MM/dd";
             this.txtTu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtTu.Location = new System.Drawing.Point(341, 60);
+            this.txtTu.Location = new System.Drawing.Point(417, 57);
             this.txtTu.Name = "txtTu";
             this.txtTu.Size = new System.Drawing.Size(91, 20);
             this.txtTu.TabIndex = 1;
@@ -77,7 +78,7 @@
             // 
             this.txtDen.CustomFormat = "yyyy/MM/dd";
             this.txtDen.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtDen.Location = new System.Drawing.Point(449, 59);
+            this.txtDen.Location = new System.Drawing.Point(525, 56);
             this.txtDen.Name = "txtDen";
             this.txtDen.Size = new System.Drawing.Size(86, 20);
             this.txtDen.TabIndex = 3;
@@ -104,7 +105,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(269, 66);
+            this.label2.Location = new System.Drawing.Point(345, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 6;
@@ -115,9 +116,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(26, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Tên nhân viên";
+            this.label3.Text = "Mã nhân viên";
             // 
             // txtTenNhanVien
             // 

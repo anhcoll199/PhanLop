@@ -47,7 +47,7 @@
             this.cbbMatour.FormattingEnabled = true;
             this.cbbMatour.Location = new System.Drawing.Point(84, 54);
             this.cbbMatour.Name = "cbbMatour";
-            this.cbbMatour.Size = new System.Drawing.Size(95, 21);
+            this.cbbMatour.Size = new System.Drawing.Size(135, 21);
             this.cbbMatour.TabIndex = 0;
             this.cbbMatour.SelectedIndexChanged += new System.EventHandler(this.cbbMatour_SelectedIndexChanged);
             // 
@@ -63,7 +63,7 @@
             // txtTenTour
             // 
             this.txtTenTour.Enabled = false;
-            this.txtTenTour.Location = new System.Drawing.Point(315, 53);
+            this.txtTenTour.Location = new System.Drawing.Point(361, 57);
             this.txtTenTour.Name = "txtTenTour";
             this.txtTenTour.Size = new System.Drawing.Size(145, 20);
             this.txtTenTour.TabIndex = 2;
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(239, 56);
+            this.label2.Location = new System.Drawing.Point(273, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 4;
